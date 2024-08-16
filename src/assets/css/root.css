@@ -1056,7 +1056,7 @@
     margin-bottom: 1.875em;
     height: 9em;
     width: auto;
-    text-align: center;
+    text-align: left;
   }
   #footer .left-section .logo img {
     display: block;
@@ -1070,7 +1070,7 @@
     font-size: 0.875rem;
     line-height: 1.92857143rem;
     color: #000;
-    text-align: center;
+    text-align: left;
   }
   #footer .right-section {
     margin: auto;
@@ -1243,130 +1243,46 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #footer {
-    background: #000000;
+    background: #A50113;
   }
-  body.dark-mode #footer .left-section {
-    margin: auto;
-    margin-bottom: 3.125rem;
-    text-align: center;
-  }
-  body.dark-mode #footer .left-section .logo {
-    display: inline-block;
-    margin: auto;
-    margin-bottom: 1.875em;
-    height: 9em;
-    width: auto;
-    text-align: center;
-  }
-  body.dark-mode #footer .left-section .logo img {
-    display: block;
-    height: 100%;
-    width: auto;
-  }
-  body.dark-mode #footer .left-section p {
-    opacity: 0.9;
-    margin: auto;
-    width: 100%;
-    font-size: 0.875rem;
-    line-height: 1.92857143rem;
-    color: #fff;
-    text-align: center;
-  }
-  body.dark-mode #footer .right-section {
-    margin: auto;
-    max-width: 25.4375rem;
-    width: 96%;
-  }
-  body.dark-mode #footer .right-section .lists {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 19.1875rem;
-    width: 96%;
-  }
-  body.dark-mode #footer .right-section .lists ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-  }
-  body.dark-mode #footer .right-section .lists ul li {
-    opacity: 0.9;
-    margin-bottom: 0.75rem;
-    list-style: none;
-    font-size: 1.125rem;
-    color: #fff;
-  }
-  body.dark-mode #footer .right-section .lists ul li a {
-    text-decoration: none;
-    line-height: 1.16666667em;
-    color: #fff;
-    transition: color 0.3s;
-  }
-  body.dark-mode #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
-  }
-  body.dark-mode #footer .right-section .lists ul h2 {
-    position: relative;
-    margin-bottom: 2.3125rem;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    line-height: 1.16666667em;
-    font-weight: bold;
-    color: #fff;
-  }
-  body.dark-mode #footer .right-section .lists ul h2:before {
-    position: absolute;
-    bottom: calc(-16 / 16 * 1rem);
-    left: 0;
-    content: "";
-    opacity: 1;
-    display: block;
-    background: var(--primary);
-    height: 0.125rem;
-    width: 6.0625rem;
-  }
-  body.dark-mode #footer .right-section .lists ul:nth-of-type(3) {
-    margin-top: 3.125rem;
-  }
-  body.dark-mode #footer .right-section .lists ul:nth-of-type(3) li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  body.dark-mode #footer .right-section .lists ul:nth-of-type(3) li:last-of-type {
-    margin-bottom: 0;
-  }
-  body.dark-mode #footer .right-section .buttons {
-    display: flex;
-    justify-content: center;
-  }
-  body.dark-mode #footer .right-section .cs-button-solid {
-    margin: 0;
-    height: 3.3125rem;
-    width: 15.625rem;
-    padding-top: 0.1875rem;
-  }
-  body.dark-mode #footer .credit {
-    margin: auto;
-    margin-top: 6.25rem;
-    width: 96%;
-    font-size: 1rem;
-    line-height: 2.25rem;
-    color: #fff;
-    text-align: center;
-  }
-  body.dark-mode #footer .credit a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: var(--primary);
-  }
-  body.dark-mode #footer .credit a:hover {
-    text-decoration: underline;
-  }
-  body.dark-mode #footer .credit .copyright {
-    display: block;
-    font-size: 1rem;
-  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+}
+.cs-topper {
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+.cs-title {
+  font-size: var(--headerFontSize);
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: inherit;
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+  color: var(--headerColor);
+  position: relative;
+}
+.cs-text {
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  text-align: inherit;
+  width: 100%;
+  max-width: 40.625rem;
+  margin: 0;
+  color: var(--bodyTextColor);
 }
