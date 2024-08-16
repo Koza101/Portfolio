@@ -68,9 +68,9 @@
     content: "";
     opacity: 1;
     display: block;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -moz-linear-gradient(top, rgba(165, 1, 19, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
+    background: -webkit-linear-gradient(top, rgba(165, 1, 19, 0.5) 0%, rgba(250, 251, 252, 0) 100%);
     /* Chrome10-25,Safari5.1-6 */
     height: 100%;
     width: 1px;
@@ -174,9 +174,9 @@
     content: "";
     opacity: 1;
     display: block;
-    background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -moz-linear-gradient(top, rgba(165, 1, 19, 0.5) 0%, rgba(250, 251, 252, 0.5) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%);
+    background: -webkit-linear-gradient(top, rgba(165, 1, 19, 0.5) 0%, rgba(250, 251, 252, 0.5) 100%);
     /* Chrome10-25,Safari5.1-6 */
     height: 100%;
     width: 1px;
@@ -189,7 +189,7 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25em) {
   #hero {
-    background: url("/assets/images/landing.jpg");
+    background: url("/assets/images/Totality_ADK_Smaller.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -216,7 +216,7 @@
     margin: auto;
     margin-top: calc(-167 / 16 * 1em);
     margin-bottom: 3.125em;
-    background: #fff;
+    background: #a50113;
     max-width: 82.5em;
     width: 90%;
     padding: 3.125em 1.25em;
@@ -288,7 +288,7 @@
 /* Dark mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services {
-    background: var(--medium);
+    background: var(--primary);
   }
   body.dark-mode #services picture {
     background: var(--primaryDark);
