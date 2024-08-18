@@ -808,7 +808,7 @@
                 .cs-button-solid {
                     transition: color 0.3s;
                     &:hover {
-                        color: var(--primary);
+                        color: var(--bodyTextColor);
                     }
                     &:before {
                         background-color: #fff;
@@ -1019,16 +1019,63 @@
                     }
 
                     .cs-price, .cs-frequency, .cs-li, .cs-item-text, .cs-package {
-                        color: var(--headerColor);
+                        color: var(--bodyTextColorWhite);
                     }
 
                     .cs-button-solid {
-                        background-color: #fff;
-                        color: var(--primary);
-
-                        &:before {
-                            background-color: #000000;
+                        transition: color 0.3s;
+                        background-color: var(--bodyTextColor);
+                        &:hover {
+                            color: var(--bodyTextColor);
                         }
+                        &:before {
+                            background-color: #fff;
+                        
+                        }
+                    }
+                }
+            }
+
+            .cs-button-solid {
+                font-size: (16/16rem);
+                font-weight: 700;
+                /* 46px - 56px */
+                line-height: clamp(2.875em, 5.5vw, 3.5em);
+                text-align: center;
+                text-decoration: none;
+                min-width: (150/16rem);
+                margin: (32/16rem) 0 0 0;
+                /* prevents padding from adding to the width */
+                box-sizing: border-box;
+                padding: 0 (24/16rem);
+                color: #fff;
+                background-color: var(--primary);
+                border-radius: (4/16rem);
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                transition: color 0.3s;
+                &:hover {
+                    color: var(--bodyTextColor);
+                }
+    
+                &:before {
+                    content: "";
+                    width: 0%;
+                    height: 100%;
+                    background: #ffffff;
+                    opacity: 1;
+                    border-radius: (4/16rem);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    transition: width 0.3s;
+                }
+    
+                &:hover {
+                    &:before {
+                        width: 100%;
                     }
                 }
             }
@@ -1198,6 +1245,7 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
+                border-radius: (1rem);
             }
         }
     }
