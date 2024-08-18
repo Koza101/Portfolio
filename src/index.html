@@ -1,7 +1,7 @@
 ---
 title: 'Pixel Perfect Websites | Champlain Valley Web Design | Plattsburgh, NY'
 description: 'Web Design In The Champlain Valley'
-preloadImg: '/assets/images/Totality_ADK_Smaller.jpg'
+preloadImg: '/assets/images/Totality_ADK_Shrunk.webp'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -36,40 +36,31 @@ eleventyNavigation:
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">Web Design In The Champlain Valley</span>
-                <h1 class="cs-title">Let's Bring Your Business Online</h1>
-                <p class="cs-text">
-                    We specialize in beautifully designed static websites that are designed to showcase all your business has to offer.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17"/>
-                    Get in Touch
-                </a>
-            </div>
+<section id="hero-1350">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Web Design In The Champlain Valley</span>
+            <h1 class="cs-title">Let's Bring Your Business Online</h1>
+            <p class="cs-text">
+                We specialize in beautifully designed static websites that are engineered to showcase all your business has to offer.
+            </p>
+            <a href="" class="cs-button-solid">Explore More</a>
         </div>
-
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/Totality_ADK_Smaller.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/Totality_ADK_Smaller.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/Totality_ADK_Smaller.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+    </div>
+    <!--Bubble Groups-->
+    <div class="cs-bubbles cs-bubbles1" aria-hidden="true"></div>
+    <div class="cs-bubbles cs-bubbles2" aria-hidden="true"></div>
+    <!-- Background Image, background image added in the css at 1600px for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/Totality_ADK_Shrunk.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/Totality_ADK_Shrunk.webp">
+        <img decoding="async" src="/assets/images/Totality_ADK_Shrunk.webp" alt="abstract background" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
 
 
     <!-- ============================================ -->
