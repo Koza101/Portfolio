@@ -1,6 +1,6 @@
 module.exports = {
     "name": "Champlain Valley Web Design",
-    "email": "help@cvwds.com",
+    "email": "masonrkozak@gmail.com",
     "phoneForTel": "518-536-6894",
     "phoneFormatted": "(518) 536-6894",
     "address": {
