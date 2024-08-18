@@ -789,7 +789,7 @@
             position: relative;
 
             &.cs-popular {
-                background-color: #C10206;
+                background-color: #ffffff;
                 /* 48px - 64px top & bottom */
                 /* 16px - 32px left & right */
                 padding: clamp(3rem, 6vw, 4rem) clamp(1rem, 1.5vw, 2rem);
@@ -797,21 +797,22 @@
                 .cs-package,
                 .cs-frequency,
                 .cs-item-text {
-                    color: var(--bodyTextColorWhite);
+                    color: var(--bodyTextColor);
                     opacity: 0.9;
                 }
 
                 .cs-price {
-                    color: var(--bodyTextColorWhite);
+                    color: var(--bodyTextColor);
                 }
 
                 .cs-button-solid {
                     transition: color 0.3s;
+                    background-color: #000;
                     &:hover {
-                        color: var(--bodyTextColor);
+                        color: var(--bodyTextColorWhite);
                     }
                     &:before {
-                        background-color: #fff;
+                        background-color: var(--primary);
                     }
                 }
             }
@@ -909,7 +910,7 @@
                 content: "";
                 width: 0%;
                 height: 100%;
-                background: #000;
+                background: #fff;
                 opacity: 1;
                 border-radius: (4/16rem);
                 position: absolute;
@@ -920,6 +921,7 @@
             }
 
             &:hover {
+                color: var(--bodyTextColor);
                 &:before {
                     width: 100%;
                 }

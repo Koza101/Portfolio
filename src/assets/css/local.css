@@ -655,7 +655,7 @@
     position: relative;
   }
   #pricing-1791 .cs-item.cs-popular {
-    background-color: #C10206;
+    background-color: #ffffff;
     /* 48px - 64px top & bottom */
     /* 16px - 32px left & right */
     padding: clamp(3rem, 6vw, 4rem) clamp(1rem, 1.5vw, 2rem);
@@ -663,20 +663,21 @@
   #pricing-1791 .cs-item.cs-popular .cs-package,
   #pricing-1791 .cs-item.cs-popular .cs-frequency,
   #pricing-1791 .cs-item.cs-popular .cs-item-text {
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     opacity: 0.9;
   }
   #pricing-1791 .cs-item.cs-popular .cs-price {
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
   }
   #pricing-1791 .cs-item.cs-popular .cs-button-solid {
     transition: color 0.3s;
+    background-color: #000;
   }
   #pricing-1791 .cs-item.cs-popular .cs-button-solid:hover {
-    color: var(--bodyTextColor);
+    color: var(--bodyTextColorWhite);
   }
   #pricing-1791 .cs-item.cs-popular .cs-button-solid:before {
-    background-color: #fff;
+    background-color: var(--primary);
   }
   #pricing-1791 .cs-package {
     /* 13px - 16px */
@@ -759,7 +760,7 @@
     content: "";
     width: 0%;
     height: 100%;
-    background: #000;
+    background: #fff;
     opacity: 1;
     border-radius: 0.25rem;
     position: absolute;
@@ -767,6 +768,9 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
+  }
+  #pricing-1791 .cs-button-solid:hover {
+    color: var(--bodyTextColor);
   }
   #pricing-1791 .cs-button-solid:hover:before {
     width: 100%;
