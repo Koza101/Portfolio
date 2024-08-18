@@ -1099,7 +1099,7 @@
   }
   #services-690 .cs-item:hover {
     background-color: #C10206;
-    box-shadow: rgba(165, 1, 19, 0.4) 0px 8px 50px;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 8px 50px;
     transform: translateY(-0.4375rem);
   }
   #services-690 .cs-item:hover .cs-picture:before {
@@ -1203,5 +1203,14 @@
   }
   body.dark-mode #services-690 .cs-item {
     background-color: var(--secondary);
+  }
+  body.dark-mode #services-690 .cs-item:hover {
+    box-shadow: rgba(165, 1, 19, 0.9) 0px 8px 50px;
+    transform: translateY(-0.4375rem);
+  }
+  body.dark-mode #services-690 .cs-item:hover .cs-picture:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
   }
 }
