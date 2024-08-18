@@ -779,7 +779,7 @@
             /* 32px - 40px top *
             /* 16px - 32px left & right */
             padding: clamp(2rem, 2vw, 2.5rem) clamp(1rem, 1.5vw, 2rem);
-            background-color: #242024;
+            background-color: #000000;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             display: flex;
@@ -1448,9 +1448,10 @@
             .cs-item {
                 background-color: var(--secondary);
             
-            &:hover {
-                box-shadow: rgba(165, 1, 19, 0.9) 0px 8px 50px;
-                transform: translateY(-0.4375rem);
+                &:hover {
+                    box-shadow: rgba(165, 1, 19, 0.9) 0px 8px 50px;
+                    transform: translateY(-0.4375rem);
+                }
 
                 .cs-picture {
                     &:before {
@@ -1462,6 +1463,4 @@
             }
         }
     }
-}
-
 }
