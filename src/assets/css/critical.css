@@ -306,6 +306,15 @@
   body.dark-mode #hero-1350 .cs-bubbles2:before {
     border: 1px solid #000;
   }
+  body.dark-mode #hero-1350 .cs-topper {
+    color: #000000;
+  }
+  body.dark-mode #hero-1350 .cs-title {
+    color: #000000;
+  }
+  body.dark-mode #hero-1350 .cs-text {
+    color: #000000;
+  }
 }
 /*-- -------------------------- -->
 <---          Services          -->
