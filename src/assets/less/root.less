@@ -1392,7 +1392,6 @@
         }
 
         .left-section {
-            margin: 0;
             width: (409/16rem);
             text-align: left;
 
@@ -1470,7 +1469,25 @@
 body.dark-mode {
     #footer {
         background: #A50113;
+            .left-section {
+                margin: auto;
+                text-align: center;
 
+                .logo {
+                    display: inline-block !important;
+                    margin: auto;
+                    margin-bottom: (30/16em);
+                    height: (18/2em);
+                    width: auto;
+                    text-align: left;
+
+                    img {
+                        display: block;
+                        height: 100%;
+                        width: auto;
+                    }
+                }
+            }
         .left-section,
         .right-section {
             p,
@@ -1513,6 +1530,27 @@ body.dark-mode {
                 &:hover {
                     color: #000; // Change link color to black on hover
                 }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 64rem) {
+        #footer {
+            font-size: ~"min(1.2vw, 1em)";
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                margin: auto;
+                max-width: (1320/16rem);
+                width: 96%;
+                padding: 0;
+            }
+    
+            .left-section {
+                width: (409/16rem);
+                text-align: left;
             }
         }
     }
