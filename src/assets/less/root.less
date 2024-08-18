@@ -1467,35 +1467,51 @@
 }
 
 /* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #footer {
-            background: #A50113;
+body.dark-mode {
+    #footer {
+        background: #A50113;
 
-            .right-section {
-                margin: auto;
-                max-width: (407/16rem);
-                width: 96%;
-                .lists {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    margin: auto;
-                    max-width: (307/16rem);
-                    width: 96%;
-                    ul {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        padding: 0;
-    
-                        li {
-                            opacity: 0.9;
-                            margin-bottom: (12/16rem);
-                            list-style: none;
-                            font-size: (18/16rem);
-                            color: #000;
-                        }
-                    }
+        .left-section,
+        .right-section {
+            p,
+            li,
+            h2,
+            a {
+                color: #fff; // Change text color to white in dark mode
+            }
+
+            // If you have other specific text elements that need color change, add them here
+        }
+        .right-section .lists ul li a {
+            color: #fff; // Default link color in dark mode
+
+            &:hover {
+                color: #000; // Change link color to black on hover
+            }
+
+            &:before {
+                background: #fff; // Adjust the underline color to white for the hover effect
+            }
+
+            &:hover:before {
+                background: #000; // Change the underline color to black on hover
+            }
+        }
+
+        .right-section .lists ul h2 {
+            &:before {
+                background-color: #000;
+            }
+        }
+
+        .credit {
+            color: #fff; // Default text color in the credit section
+
+            a {
+                color: var(--primary-light); // Adjust link color in dark mode if needed
+
+                &:hover {
+                    color: #000; // Change link color to black on hover
                 }
             }
         }
