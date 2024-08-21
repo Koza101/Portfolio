@@ -95,6 +95,11 @@
   #RTsbst-71 {
     padding: var(--sectionPadding);
   }
+  #RTsbs-71 ul.cs-ul,
+  #RTsbsr-71 ul.cs-ul,
+  #RTsbst-71 ul.cs-ul {
+    list-style-type: none;
+  }
   #RTsbs-71 .cs-container,
   #RTsbsr-71 .cs-container,
   #RTsbst-71 .cs-container {
