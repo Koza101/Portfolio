@@ -1,11 +1,11 @@
 module.exports = {
     "name": "Champlain Valley Web Design",
-    "email": "masonrkozak@gmail.com",
+    "email": "mkozak@cvwds.com",
     "phoneForTel": "518-536-6894",
     "phoneFormatted": "(518) 536-6894",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
+        "lineOne": "",
+        "lineTwo": "",
         "city": "Plattsburgh",
         "state": "NY",
         "zip": "12901",
@@ -13,8 +13,8 @@ module.exports = {
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
+        "instagram": "https://www.instagram.com/c_v_w_d",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.cvwds.com"
+    "domain": "https://cvwds.com"
 };
