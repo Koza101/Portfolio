@@ -1245,6 +1245,7 @@ body.dark-mode #footer {
 }
 body.dark-mode #footer .left-section {
   margin: auto;
+  margin-bottom: 3.125rem;
   text-align: center;
 }
 body.dark-mode #footer .left-section .logo {
