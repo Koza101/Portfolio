@@ -129,12 +129,3 @@ module.exports = function (eleventyConfig) {
         htmlTemplateEngine: "njk",
     };
 };
-
-const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
-
-module.exports = function (eleventyConfig) {
-    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
-        urlPath: "/assets/images",
-        outputDir: "public/assets/images",
-    });
-};
