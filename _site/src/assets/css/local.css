@@ -1,0 +1,1263 @@
+/* PAGE-SPECIFIC STYLES FOR THE HOME PAGE */
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs {
+    padding: var(--sectionPadding);
+  }
+  #sbs .cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    row-gap: 2.5rem;
+  }
+  #sbs .cs-left {
+    position: relative;
+    height: 39.75em;
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+  }
+  #sbs .cs-picture {
+    position: absolute;
+    display: block;
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+  }
+  #sbs .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #sbs .cs-picture1 {
+    top: 0;
+    left: 0;
+    height: 36.3125em;
+    width: 32.625em;
+  }
+  #sbs .cs-picture2 {
+    bottom: 0;
+    right: 0;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    background-color: #fff;
+    height: 25em;
+    width: 25.875em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+  }
+  #sbs .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+  #sbs .cs-topper {
+    margin-bottom: 0.25rem;
+    text-align: left;
+  }
+  #sbs .cs-title {
+    max-width: 50rem;
+    text-align: left;
+  }
+  #sbs .cs-text {
+    margin-bottom: 1rem;
+    max-width: 46.875rem;
+    text-align: left;
+  }
+  #sbs .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs .cs-flex-group {
+    position: relative;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+  }
+  #sbs .cs-flex-p {
+    margin: 0 0 1rem;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs .cs-name {
+    display: block;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: var(--headerColor);
+  }
+  #sbs .cs-job {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs .cs-quote-icon {
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+    height: auto;
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+  }
+  #sbs .cs-button-solid {
+    margin-top: 2rem;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #sbs .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #sbs .cs-right {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs .cs-left:before,
+  body.dark-mode #sbs .cs-left:after {
+    background: var(--accent);
+  }
+  body.dark-mode #sbs .cs-picture2 {
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+    background-color: var(--dark);
+  }
+  body.dark-mode #sbs .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #sbs .cs-title,
+  body.dark-mode #sbs .cs-text,
+  body.dark-mode #sbs .cs-h3,
+  body.dark-mode #sbs .cs-flex-p,
+  body.dark-mode #sbs .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs .cs-flex-group {
+    background-color: var(--accent);
+  }
+  body.dark-mode #sbs .cs-job {
+    opacity: 0.8;
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs .cs-quote-icon {
+    opacity: 0.2;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-r {
+    padding: var(--sectionPadding);
+  }
+  #sbs-r .cs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80rem;
+    width: 100%;
+    row-gap: 2.5rem;
+  }
+  #sbs-r .cs-left {
+    position: relative;
+    height: 39.75em;
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+  }
+  #sbs-r .cs-picture {
+    position: absolute;
+    display: block;
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+  }
+  #sbs-r .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #sbs-r .cs-picture1 {
+    top: 0;
+    right: 0;
+    height: 36.3125em;
+    width: 32.625em;
+  }
+  #sbs-r .cs-picture2 {
+    bottom: 0;
+    left: 0;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
+    background-color: #fff;
+    height: 25em;
+    width: 25.875em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+  }
+  #sbs-r .cs-right {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+  #sbs-r .cs-topper {
+    margin-bottom: 0.25rem;
+    text-align: left;
+  }
+  #sbs-r .cs-title {
+    max-width: 50rem;
+    text-align: left;
+  }
+  #sbs-r .cs-text {
+    margin-bottom: 1rem;
+    max-width: 46.875rem;
+    text-align: left;
+  }
+  #sbs-r .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-r .cs-flex-group {
+    position: relative;
+    border-radius: 1rem;
+    background-color: #f7f7f7;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+  }
+  #sbs-r .cs-flex-p {
+    margin: 0 0 1rem;
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs-r .cs-name {
+    display: block;
+    margin: 0 0 0.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: var(--headerColor);
+  }
+  #sbs-r .cs-job {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #353535;
+  }
+  #sbs-r .cs-quote-icon {
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+    height: auto;
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-r .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+  }
+  #sbs-r .cs-left {
+    /* sends it to the right */
+    order: 2;
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #sbs-r .cs-right {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-r .cs-left:before,
+  body.dark-mode #sbs-r .cs-left:after {
+    background: var(--accent);
+  }
+  body.dark-mode #sbs-r .cs-picture2 {
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+    background-color: var(--dark);
+  }
+  body.dark-mode #sbs-r .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #sbs-r .cs-title,
+  body.dark-mode #sbs-r .cs-text,
+  body.dark-mode #sbs-r .cs-h3,
+  body.dark-mode #sbs-r .cs-flex-p,
+  body.dark-mode #sbs-r .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-r .cs-flex-group {
+    background-color: var(--accent);
+  }
+  body.dark-mode #sbs-r .cs-job {
+    opacity: 0.8;
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-r .cs-quote-icon {
+    opacity: 0.2;
+  }
+}
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px - Contains hover animation */
+@media only screen and (min-width: 0rem) {
+  #gallery {
+    position: relative;
+    /* Prevents overflow from the image going off screen */
+    overflow: hidden;
+    padding: var(--sectionPadding);
+    /* Centers button */
+    text-align: center;
+  }
+  #gallery .cs-container {
+    margin: auto;
+    max-width: 82.625em;
+    width: 100%;
+  }
+  #gallery .cs-topper {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #gallery .cs-title {
+    margin-bottom: 2.5rem;
+    max-width: 38.8125rem;
+    text-align: center;
+  }
+  #gallery .cs-image-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 3.75rem;
+    max-width: 82.625em;
+    width: 100%;
+    padding: 0;
+    /* used rem so it doesn't scale with the font size of on parent */
+    font-size: min(1.1vw, 1em);
+    gap: 1.875em;
+  }
+  #gallery .cs-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.875em;
+  }
+  #gallery .cs-picture {
+    position: relative;
+    display: block;
+  }
+  #gallery .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #gallery .cs-row-1 .cs-picture1 {
+    height: 35.4375em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-1 .cs-picture2 {
+    height: 39.3125em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-1 .cs-picture3 {
+    height: 32em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-2 .cs-picture1 {
+    height: 30.75em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-2 .cs-picture2 {
+    height: 32.3125em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-2 .cs-picture3 {
+    height: 39.3125em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-3 .cs-picture1 {
+    height: 39.0625em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-3 .cs-picture2 {
+    height: 28.25em;
+    width: 26.25em;
+  }
+  #gallery .cs-row-3 .cs-picture3 {
+    height: 39.3125em;
+    width: 26.25em;
+  }
+}
+/* Dark mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+}
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews {
+    padding: var(--sectionPadding);
+    /* Centers the button */
+    text-align: center;
+  }
+  #reviews .cs-container {
+    margin: auto;
+    max-width: 69rem;
+    width: 100%;
+  }
+  #reviews .cs-topper {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #reviews .cs-title {
+    max-width: 100%;
+    text-align: center;
+  }
+  #reviews .cs-text {
+    /* 88px - 104px */
+    margin-bottom: clamp(5.5em, 10.2vw, 6.5em);
+    max-width: 100%;
+    text-align: center;
+  }
+  #reviews .cs-card-group {
+    /* 48px - 64px */
+    margin: 0 auto clamp(3rem, 5vw, 4rem);
+    padding: 0;
+  }
+  #reviews .cs-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.25rem;
+    margin: 0 auto 4rem;
+    background: #fff;
+    max-width: 33.875rem;
+    width: 100%;
+    /* Prevents padding from affecting height & width */
+    box-sizing: border-box;
+    /* Padding L & R - 16px - 32px */
+    padding: 3.75rem clamp(1rem, 3.2vw, 2rem) 0;
+    /* 32px - 40px */
+    padding-bottom: clamp(2rem, 5.4vw, 2.5rem);
+    list-style: none;
+    text-align: left;
+    box-shadow: 0px 20px 39px 0px rgba(0, 0, 0, 0.05);
+  }
+  #reviews .cs-item:last-of-type {
+    margin-bottom: 0;
+  }
+  #reviews .cs-item-img {
+    position: absolute;
+    top: calc(-40 / 16 * 1rem);
+    height: 5rem;
+    width: 5rem;
+  }
+  #reviews .cs-item-p {
+    border-bottom: 1px solid #e8e9ec;
+    margin: 0 0 1.25rem;
+    padding-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+  }
+  #reviews .cs-reviewer {
+    display: block;
+    margin: 0 auto 0 0;
+    width: 40%;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    color: var(--headerColor);
+  }
+  #reviews .cs-desc {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(#353535);
+  }
+  #reviews .cs-item-stars {
+    height: 1rem;
+    width: 6rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews .cs-card-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  #reviews .cs-item {
+    /* reset margin so it won't interfere with flexbox */
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews .cs-title,
+  body.dark-mode #reviews .cs-text,
+  body.dark-mode #reviews .cs-item-p,
+  body.dark-mode #reviews .cs-reviewer {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews .cs-item {
+    background: var(--medium);
+  }
+  body.dark-mode #reviews .cs-desc {
+    color: var(--primaryLight);
+  }
+}
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing-1791 {
+    padding: var(--sectionPadding);
+    padding-bottom: 10vw;
+    background-color: #A50113;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  #pricing-1791 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  #pricing-1791 .cs-content {
+    /* set text align to center if content needs to be center aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+  }
+  #pricing-1791 .cs-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  #pricing-1791 .cs-title {
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing-1791 .cs-wrapper {
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #pricing-1791 .cs-ul {
+    width: 100%;
+    margin: 1.5rem 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #pricing-1791 .cs-li {
+    font-size: var(--bodyFontSize);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    max-width: 21.8125rem;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #pricing-1791 .cs-icon {
+    width: 1.125rem;
+    height: auto;
+    display: block;
+  }
+  #pricing-1791 .cs-card-group {
+    width: 100%;
+    max-width: 57rem;
+    margin: 3rem 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #pricing-1791 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    /* 32px - 40px top *
+            /* 16px - 32px left & right */
+    padding: clamp(2rem, 2vw, 2.5rem) clamp(1rem, 1.5vw, 2rem);
+    background-color: #000000;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+  }
+  #pricing-1791 .cs-item.cs-popular {
+    background-color: #ffffff;
+    /* 48px - 64px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(3rem, 6vw, 4rem) clamp(1rem, 1.5vw, 2rem);
+  }
+  #pricing-1791 .cs-item.cs-popular .cs-package,
+  #pricing-1791 .cs-item.cs-popular .cs-frequency,
+  #pricing-1791 .cs-item.cs-popular .cs-item-text {
+    color: var(--bodyTextColor);
+    opacity: 0.9;
+  }
+  #pricing-1791 .cs-item.cs-popular .cs-price {
+    color: var(--bodyTextColor);
+  }
+  #pricing-1791 .cs-item.cs-popular .cs-button-solid {
+    transition: color 0.3s;
+    background-color: #000;
+  }
+  #pricing-1791 .cs-item.cs-popular .cs-button-solid:hover {
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing-1791 .cs-item.cs-popular .cs-button-solid:before {
+    background-color: var(--primary);
+  }
+  #pricing-1791 .cs-package {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.4vw, 1rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    text-transform: uppercase;
+    margin: 0 0 0.25rem 0;
+    color: var(--bodyTextColorWhite);
+    display: block;
+  }
+  #pricing-1791 .cs-flex-wrapper {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    padding: 0 0 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #pricing-1791 .cs-flex-wrapper:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(232, 232, 232, 0.2) 0%, #e8e8e8 53.78%, rgba(232, 232, 232, 0.2) 100%);
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+  }
+  #pricing-1791 .cs-price {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing-1791 .cs-frequency {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    display: block;
+  }
+  #pricing-1791 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0 0 auto;
+    color: var(--bodyTextColorWhite);
+    opacity: 0.8;
+  }
+  #pricing-1791 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 2rem 0 0 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #pricing-1791 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #fff;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #pricing-1791 .cs-button-solid:hover {
+    color: var(--bodyTextColor);
+  }
+  #pricing-1791 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #pricing-1791 .cs-graphic {
+    width: 100%;
+    min-width: 120rem;
+    height: auto;
+    position: absolute;
+    bottom: -1rem;
+    left: 0rem;
+    z-index: -1;
+  }
+  #pricing-1791 .cs-dark {
+    display: none;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #pricing-1791 .cs-container {
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #pricing-1791 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #pricing-1791 .cs-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+  }
+  #pricing-1791 .cs-card-group {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #pricing-1791 .cs-item {
+    height: auto;
+    margin: 1.5rem 0;
+  }
+  #pricing-1791 .cs-item.cs-popular {
+    margin: 0;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing-1791 .cs-ul {
+    width: 30%;
+    display: flex;
+  }
+  #pricing-1791 .cs-wrapper {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+  #pricing-1791 .cs-card-group {
+    margin: 0;
+  }
+  #pricing-1791 .cs-item {
+    min-height: 25rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing-1791 {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  body.dark-mode #pricing-1791 .cs-item {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  body.dark-mode #pricing-1791 .cs-item.cs-popular {
+    background-color: var(--primary);
+  }
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-flex-wrapper:after {
+    filter: grayscale(1) brightness(30%);
+  }
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-price,
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-frequency,
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-li,
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-item-text,
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-package {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-button-solid {
+    transition: color 0.3s;
+    background-color: var(--bodyTextColor);
+  }
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-button-solid:hover {
+    color: var(--bodyTextColor);
+  }
+  body.dark-mode #pricing-1791 .cs-item.cs-popular .cs-button-solid:before {
+    background-color: #fff;
+  }
+  body.dark-mode #pricing-1791 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 2rem 0 0 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+  body.dark-mode #pricing-1791 .cs-button-solid:hover {
+    color: var(--bodyTextColor);
+  }
+  body.dark-mode #pricing-1791 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #ffffff;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  body.dark-mode #pricing-1791 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  body.dark-mode #pricing-1791 .cs-light {
+    display: none;
+  }
+  body.dark-mode #pricing-1791 .cs-dark {
+    display: block;
+  }
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-562 {
+    padding: var(--sectionPadding);
+  }
+  #services-562 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-562 .cs-content-top {
+    /* set text aling to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-562 .cs-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #services-562 .cs-topper {
+    color: var(--headerColor);
+  }
+  #services-562 .cs-title {
+    margin: 0;
+  }
+  #services-562 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #services-562 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #services-562 .cs-color {
+    color: var(--primary);
+  }
+  #services-562 .cs-h3 {
+    /* 25px - 31px */
+    font-size: clamp(1.5625rem, 3vw, 1.9375rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: inherit;
+    /* 16px - 20px */
+    margin: 0 0 clamp(1rem, 1.9vw, 1.25rem) 0;
+    color: var(--headerColor);
+  }
+  #services-562 .cs-ul {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  #services-562 .cs-li {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 700;
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  #services-562 .cs-icon {
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: clamp(0.125rem, 0.47vw, 0.4375rem);
+  }
+  #services-562 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--secondary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #services-562 .cs-button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #services-562 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #services-562 .cs-picture {
+    /* changes at tablet */
+    width: 100%;
+    max-width: 39.375rem;
+    /* changes to a clamp at tablet */
+    height: 24.75rem;
+    display: block;
+    position: relative;
+  }
+  #services-562 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-562 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #services-562 .cs-picture {
+    width: 46vw;
+    /* 415px - 528px */
+    height: clamp(25.9375rem, 50vw, 33rem);
+  }
+  #services-562 .cs-content {
+    width: 45%;
+    max-width: 32.5rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-562 .cs-topper {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #services-562 .cs-color {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #services-562 .cs-title,
+  body.dark-mode #services-562 .cs-text,
+  body.dark-mode #services-562 .cs-h3,
+  body.dark-mode #services-562 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #services-562 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #services-562 .cs-icon {
+    filter: brightness(150%);
+  }
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-690 {
+    padding: var(--sectionPadding);
+  }
+  #services-690 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-690 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-690 .cs-flex-group {
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-690 .cs-color {
+    color: var(--primary);
+  }
+  #services-690 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  #services-690 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* 24px - 40px top & bottom */
+    padding: clamp(1.25rem, 4vw, 2.5rem) 1.5rem;
+    background-color: #f7f8f8;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  #services-690 .cs-item:hover {
+    background-color: #C10206;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 8px 50px;
+    transform: translateY(-0.4375rem);
+  }
+  #services-690 .cs-item:hover .cs-picture:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  #services-690 .cs-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #services-690 .cs-picture {
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000;
+    box-shadow: 0px 12px 30px rgba(26, 26, 26, 0.4);
+    position: relative;
+    z-index: 1;
+  }
+  #services-690 .cs-icon {
+    height: 2rem;
+    width: auto;
+  }
+  #services-690 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-690 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-690 .cs-container {
+    max-width: 80rem;
+  }
+  #services-690 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  #services-690 .cs-flex-group {
+    width: 50%;
+  }
+  #services-690 .cs-card-group {
+    /* pushes down the same amount the 2nd cards are translated down to maintain the even spacing at the bottom of the cs-card-group */
+    margin-bottom: 2.5rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+  }
+  #services-690 .cs-item {
+    width: 30vw;
+    max-width: 25.8125rem;
+  }
+  #services-690 .cs-item:nth-of-type(2) {
+    transform: translateY(2.5rem);
+  }
+  #services-690 .cs-item:nth-of-type(2):hover {
+    /* make these cards a separate hover translate amount, they're already translated 40px down, so to match the same hover animations as the other cards we just subtract their translate values from the 40px and they will move up by the same amount as the other cards */
+    transform: translateY(2.0625rem);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-690 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #services-690 .cs-title,
+  body.dark-mode #services-690 .cs-text,
+  body.dark-mode #services-690 .cs-h3,
+  body.dark-mode #services-690 .cs-item-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #services-690 .cs-text,
+  body.dark-mode #services-690 .cs-item-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #services-690 .cs-item {
+    background-color: var(--secondary);
+  }
+  body.dark-mode #services-690 .cs-item:hover {
+    box-shadow: rgba(165, 1, 19, 0.9) 0px 8px 50px;
+    transform: translateY(-0.4375rem);
+  }
+  body.dark-mode #services-690 .cs-item .cs-picture:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+}
