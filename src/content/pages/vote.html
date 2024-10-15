@@ -1,0 +1,117 @@
+---
+title: 'Vote'
+description: 'Vote'
+preloadImg: '/assets/images/Totality_ADK_Shrunk.webp'
+permalink: 'vote/'
+eleventyNavigation:
+    key: Vote
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Vote</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/Totality_ADK_Shrunk.webp">
+            <source media="(min-width: 601px)" srcset="/assets/images/Totality_ADK_Shrunk.webp">
+            <img aria-hidden="true" decoding="async" src="/assets/images/Totality_ADK_Shrunk.webp" alt="Totality" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Collection                  -->
+    <!-- ============================================ -->
+
+    <section id="collection-1579">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">LOGO SUBMISSIONS</span>
+                <h2 class="cs-title">Cast Your Vote!</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-tshirts.png">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-tshirts.png">
+                            <img loading="lazy" decoding="async"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-tshirts.png"
+                                    width="365" height="201" alt="t-shirt">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-category">Cast Vote</span>
+                            <span class="cs-quantity">Winner Recieves $25</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link"> {# Need to put vote links here, record click as vote then change display #}
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-bags.png">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-bags.png">
+                            <img loading="lazy" decoding="async"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-bags.png" width="365"
+                                    height="201" alt="purse">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-category">Cast Vote</span>
+                            <span class="cs-quantity">Winner Recieves $25</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-shoes.png">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-shoes.png">
+                            <img loading="lazy" decoding="async"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-shoes.png"
+                                    width="365" height="201" alt="shoes">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-category">Cast Vote</span>
+                            <span class="cs-quantity">Winner Recieves $25</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <picture class="cs-picture" aria-hidden="true">
+                            <source media="(max-width: 600px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-accessories.png">
+                            <source media="(min-width: 601px)"
+                                    srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-accessories.png">
+                            <img loading="lazy" decoding="async"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-offer-accessories.png"
+                                    width="365" height="201" alt="perfume">
+                        </picture>
+                        <div class="cs-info">
+                            <span class="cs-category">Cast Vote</span>
+                            <span class="cs-quantity">Winner Recieves $25</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    {# {% include 'components/cta.html' %} #}
+
+{% endblock %}
