@@ -1,5 +1,5 @@
 module.exports = {
-    "name": "Champlain Valley Web Design",
+    "name": "Mason Kozak",
     "email": "mkozak@cvwds.com",
     "phoneForTel": "518-536-6894",
     "phoneFormatted": "(518) 536-6894",
@@ -16,5 +16,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/c_v_w_d",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://cvwds.com"
+    "domain": "https://masonkozak.com"
 };
